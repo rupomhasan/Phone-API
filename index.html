@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <title>Phone API</title>
+   </head>
+   <body>
+      <header class="bg-[#0D6EFD0D] py-10 max-h-[720px] relative">
+         <!-- nav bar seciton -->
+         <nav>
+            <div class="flex justify-around">
+               <h2 class="text-2xl font-bold">Hot Gadgets</h2>
+               <button class="btn btn-info text-white px-8">Sing Up</button>
+            </div>
+         </nav>
+         <!-- hero section  -->
+         <div class="mt-8">
+            <div class="flex flex-col items-center space-y-6">
+               <h1 class="text-center text-3xl md:text-6xl font-bold">
+                  Apple Iphone 13 Pro Max
+               </h1>
+               <p class="text-[18px] text-justify md:text-center max-w-[700px]">
+                  There are many variations of passangers of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humou.
+               </p>
+               <button class="btn btn-info text-white px-5">Buy Now</button>
+            </div>
+         </div>
+         <div
+            class="lg:absolut inset-0 inset-y-0 flex items-end justify-center lg:mt-"
+         >
+            <div class="">
+               <img src="/IMAGE/pngwing 2.png" alt="" />
+            </div>
+            <div><img src="/IMAGE/pngwing 1.png" alt="" /></div>
+            <div><img src="/IMAGE/pngwing 2.png" alt="" /></div>
+         </div>
+      </header>
+      <main class="mt-80">
+         <div class="flex flex-col items-center my-8">
+            <h3 class="text-4xl text-center font-semibold">
+               Search your phone
+            </h3>
+            <div class="relative flex mt-5">
+               <img
+                  class="absolute mt-3 ml-[150px] md:ml-4"
+                  src="/IMAGE/Frame.png"
+                  alt=""
+               />
+               <input
+                  class="pl-4 md:px-10 bg-base-200 rounded-l-xl"
+                  type="text"
+                  name=""
+                  placeholder="Search your phone"
+                  id="search-fild"
+               />
+               <button
+                  onclick="handleSearch()"
+                  class="btn btn-info text-white px-5 rounded-none rounded-r-xl"
+               >
+                  Search
+               </button>
+            </div>
+         </div>
+         <section class="max-w-screen-xl mx-auto">
+            <!-- add loading spinner -->
+            <div id="loading-spinner" class="hidden text-center">
+               <span class="loading loading-spinner text-info"></span>
+            </div>
+            <div id="massage" class="text-center mb-3 text-lg py-12">
+               <p>No data available.....</p>
+            </div>
+            <div
+               id="card-container"
+               class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            ></div>
+         </section>
+         <div
+            onclick="handleShowAll()"
+            id="show-All-Btn"
+            class="hidden text-center my-12"
+         >
+            <button class="btn btn-info text-white">Show all</button>
+         </div>
+      </main>
+      <footer class="bg-[#0D6EFD0D]">
+         <div
+            class="md:flex justify-between max-w-screen-xl mx-auto py-28 md:px-16 border-b space-y-5"
+         >
+            <div class="space-y-5">
+               <h4 class="text-5xl font-bold">Hot Gadgets</h4>
+               <p class="text-center">You can definitely work.</p>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+               <ul class="flex gap-2">
+                  <li>
+                     <i class="fa-brands fa-facebook"></i>
+                  </li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+               </ul>
+               <button class="btn btn-info text-white px-5">
+                  Join Premium
+               </button>
+            </div>
+         </div>
+         <div
+            class="grid grid-cols-2 md:grid-cols-4 footer p-10 max-w-screen-xl mx-auto text-base-content"
+         >
+            <nav>
+               <a class="link link-hover">Product</a>
+               <a class="link link-hover">Browse Jobs</a>
+               <a class="link link-hover">Remote Jobs</a>
+               <a class="link link-hover">Startup Jobs</a>
+               <a class="link link-hover">Company Jobs</a>
+            </nav>
+            <nav>
+               <a class="link link-hover">Popular</a>
+               <a class="link link-hover">UIUX Design</a>
+               <a class="link link-hover">Product Design</a>
+               <a class="link link-hover">Back-End Developer</a>
+               <a class="link link-hover">Front-End Developer</a>
+            </nav>
+            <nav>
+               <a class="link link-hover">Resource</a>
+               <a class="link link-hover">FAQ</a>
+               <a class="link link-hover">Support</a>
+               <a class="link link-hover">Privacy Policy</a>
+               <a class="link link-hover">Terms of Service</a>
+            </nav>
+            <nav class="flex flex-col">
+               <a class="link link-hover">Company</a>
+               <a class="link link-hover">About US</a>
+               <a class="link link-hover">Conatact Us</a>
+               <a class="link link-hover">Career Tips</a>
+               <a class="link link-hover">Carrers</a>
+            </nav>
+         </div>
+      </footer>
+      <script src="/JavaScript/phone.js"></script>
+   </body>
+</html>
